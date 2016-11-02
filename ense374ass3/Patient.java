@@ -9,16 +9,16 @@ public class Patient {
 	String diagnosis;
 	ArrayList<String> history = new ArrayList<>();
 	ArrayList<Medication> medicationList = new ArrayList<>();
-	Doctor doctor;
+	int doctorId;
 	
-	public Patient(String name, int age, int weight, String diagnoses, ArrayList<String> history, ArrayList<Medication> medicationList, Doctor doctor) {
+	public Patient(String name, int age, int weight, String diagnoses, ArrayList<String> history, ArrayList<Medication> medicationList, int doctorId) {
 		this.name = name;
 		this.age = age;
 		this.weight = weight;
 		this.diagnosis = diagnoses;
 		this.history = history;
 		this.medicationList = medicationList;
-		this.doctor = doctor;
+		this.doctorId = doctorId;
 	}
 	
 	public ArrayList<Medication> GetMedication() {

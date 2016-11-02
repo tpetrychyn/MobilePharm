@@ -4,23 +4,26 @@ import java.util.ArrayList;
 
 public class Doctor {
 	String name;
-	ArrayList<Patient> patients = new ArrayList<>();
+	ArrayList<Integer> patientIds = new ArrayList<>();
 	
-	public Doctor(String name, ArrayList<Patient> patients) {
+	public Doctor() {
+	}
+	
+	public Doctor(String name, ArrayList<Integer> patientIds) {
 		this.name = name;
-		this.patients = patients;
+		this.patientIds = patientIds;
 	}
 
 	public String GetName() {
 		return name;
 	}
 	
-	public ArrayList<Patient> GetPatients() {
-		return patients;
+	public ArrayList<Integer> GetPatientIds() {
+		return patientIds;
 	}
 	
-	public void AddPatient(Patient p) {
-		patients.add(p);
+	public void AddPatient(int pId) {
+		patientIds.add(pId);
 	}
 	
 	ArrayList<String> GetPatientHistory(Patient p) {
