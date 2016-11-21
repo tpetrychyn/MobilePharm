@@ -6,6 +6,7 @@ public class Medication {
 	int refills;
 	String name;
 	int number;
+	String type;
 	Doctor prescriber;
 	MedicationTaking medTaking;
 	
@@ -15,6 +16,10 @@ public class Medication {
 		this.number = number;
 		this.prescriber = prescriber;
 		this.medTaking = medTaking;
+	}
+	
+	public Medication() {
+		
 	}
 
 	public int GetRefills() {
@@ -37,7 +42,7 @@ public class Medication {
 		return medTaking;
 	}
 	
-	public void SetMedTaking(Date startDate, Date endDate, int dosage, int dailyFrequency) {
+	public void SetMedTaking(String startDate, String endDate, int dosage, int dailyFrequency) {
 		medTaking.startDate = startDate;
 		medTaking.endDate = endDate;
 		medTaking.dosage = dosage;

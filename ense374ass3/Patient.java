@@ -7,11 +7,11 @@ public class Patient {
 	int age;
 	int weight;
 	String diagnosis;
-	ArrayList<String> history = new ArrayList<>();
+	ArrayList<Medication> history = new ArrayList<>();
 	ArrayList<Medication> medicationList = new ArrayList<>();
 	int doctorId;
 	
-	public Patient(String name, int age, int weight, String diagnoses, ArrayList<String> history, ArrayList<Medication> medicationList, int doctorId) {
+	public Patient(String name, int age, int weight, String diagnoses, ArrayList<Medication> history, ArrayList<Medication> medicationList, int doctorId) {
 		this.name = name;
 		this.age = age;
 		this.weight = weight;
@@ -25,7 +25,7 @@ public class Patient {
 		return medicationList;
 	}
 	
-	public ArrayList<String> GetHistory() {
+	public ArrayList<Medication> GetHistory() {
 		return history;
 	}
 	
@@ -33,7 +33,7 @@ public class Patient {
 		medicationList.add(m);
 	}
 	
-	public void AddHistory(String h) {
+	public void AddHistory(Medication h) {
 		history.add(h);
 	}
 }

@@ -3,16 +3,16 @@ package ense374ass3;
 import java.util.Date;
 
 public class MedicationTaking {
-	Date startDate;
-	Date endDate;
+	String startDate;
+	String endDate;
 	int dosage;
 	int dailyFrequency;
 	
-	public Date GetStartDate() {
+	public String GetStartDate() {
 		return startDate;
 	}
 	
-	public Date GetEndDate() {
+	public String GetEndDate() {
 		return endDate;
 	}
 	
@@ -24,11 +24,11 @@ public class MedicationTaking {
 		return dailyFrequency;
 	}
 
-	public void SetStartDate(Date startDate) {
+	public void SetStartDate(String startDate) {
 		this.startDate = startDate;
 	}
 
-	public void SetEndDate(Date endDate) {
+	public void SetEndDate(String endDate) {
 		this.endDate = endDate;
 	}
 

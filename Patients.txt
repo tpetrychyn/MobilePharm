@@ -1,0 +1,2 @@
+Taylor,21,170,leprosy,0,
+Paul,21,160,seasonal allergies,1,

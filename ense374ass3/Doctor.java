@@ -26,7 +26,7 @@ public class Doctor {
 		patientIds.add(pId);
 	}
 	
-	ArrayList<String> GetPatientHistory(Patient p) {
+	ArrayList<Medication> GetPatientHistory(Patient p) {
 		return p.GetHistory();
 	}
 	
